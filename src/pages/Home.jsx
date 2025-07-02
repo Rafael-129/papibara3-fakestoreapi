@@ -11,7 +11,6 @@ function Home() {
     getProducts();
   }, [getProducts]);
 
-  // Filtra productos por título
   const filteredProducts = products.filter(product =>
     product.title.toLowerCase().includes(search.toLowerCase())
   );
